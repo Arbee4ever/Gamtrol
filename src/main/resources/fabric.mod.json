@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "Gamtrol",
+  "version": "${version}",
+  "name": "Gamtrol",
+  "description": "A mod that allows you to use Gamerule Presets when creating a world.",
+  "authors": [
+    "Arbee"
+  ],
+  "contact": {
+    "website": "https://arbee4ever.github.io",
+    "repo": "https://github.com/Arbee4ever/Gamtrol"
+  },
+  "license": "MIT",
+  "icon": "assets/Gamtrol/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gamtrol.gamtrol.client.GamtrolClient"
+    ],
+    "main": [
+      "gamtrol.gamtrol.Gamtrol"
+    ]
+  },
+  "mixins": [
+    "Gamtrol.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.7",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
